@@ -1,0 +1,43 @@
+
+Multithreading
+
+public class TestThread {
+
+    public static void main(String[] args) {
+   	 System.out.print("Hello Bangladesh");
+   	 
+   	 Thread t1 = new Thread(new Runnable() {
+
+   		 @Override
+   		 public void run() {
+   			 while (true) {
+   				 System.out.print("t");
+   			 }
+   		 } 
+   	 });
+   	 
+   	 Thread t2 = new Thread(new Runnable() {
+
+   		 @Override
+   		 public void run() {
+   			 while (true) {
+   				 System.out.print(" ");
+   			 }
+   		 }
+   	 });
+	 
+   	 Thread t3 = new Thread(new Runnable() {
+
+   		 @Override
+   		 public void run() {
+   			 while (true) {
+   				 System.out.println();
+   			 }
+   		 }
+   	 });
+   	 
+    t1.start();
+    t2.start();
+    t3.start();
+    }
+}
