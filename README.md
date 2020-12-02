@@ -1,2 +1,2 @@
 # operating-system
-<p>This repository contains some basic programs of Operating Systems.</p>
+<p>This repository contains a few basic programs of Operating System.</p>
